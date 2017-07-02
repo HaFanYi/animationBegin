@@ -23,9 +23,9 @@ class ViewController: UIViewController {
 动画进行阶段和动画结束阶段
 在view视图整体展现之前完成这两个阶段(如果视图已经显示了才设置动画效果，会有动画不连贯现象)，所以这部分代码要放在viewWillAppear方法中
   override func viewWillAppear(_ animated: Bool) {
-//        UIView.animate(withDuration: 1,animations:{
-//            loginButtion!.frame = CGRect(x:20,y:loginButtion!.frame.origin.y,width:loginButtion!.frame.width,height:loginButtion!.frame.height)
-//        })   
+        UIView.animate(withDuration: 1,animations:{
+          loginButtion!.frame = CGRect(x:20,y:loginButtion!.frame.origin.y,width:loginButtion!.frame.width,height:loginButtion!.frame.height)
+     })   
         
         UIView.beginAnimations(nil, context: nil)//动画开始
         UIView.setAnimationDuration(1);//动画周期设置
